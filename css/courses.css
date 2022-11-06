@@ -1,0 +1,155 @@
+/* Section welcome */
+.welcome{
+    height: 50vh;
+    background-color: var(--bg-primary);
+}
+
+.welcome h1{
+    color: var(--text-light);
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.welcome .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px){
+    .welcome h1{
+        font-size: 2rem;
+    }
+}   
+
+.information-courses h2{
+    margin-bottom: var(--spacing-large);
+    padding-top: var(--spacing-large) ;
+    color:var(--text-primary); 
+    text-align: center;
+}
+
+.information-courses p {
+    text-align: center;
+    font-size: var(--fs-medium);
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-large);
+}
+
+/* Programe de pregatire */
+
+.card p{
+    font-size: var(--fs-medium);
+    color: #666;
+}
+
+.courses-online .card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-large);
+
+}
+
+.card .card-section{
+    width: calc(100% / 3);
+    padding-left: var(--spacing-small);
+    padding-right: var(--spacing-small);
+}
+
+.card .card-section-wrapper{
+
+    border: 1px solid rgb(221, 221, 221);
+    width: 100%;
+    border-radius: 4px;
+    padding: var(--spacing-tiny);
+   
+}
+
+.card-section-wrapper img{
+    width: 100%;
+    height: auto;
+    margin-bottom: var(--spacing-large);
+}
+
+.card-section-wrapper h3{
+    margin-bottom: var(--spacing-medium);
+    color: var(--text-primary);
+    
+}
+
+.card-section-wrapper .certification{
+    margin-bottom: var(--spacing-medium);
+ 
+    
+}
+
+.card-section-wrapper .img-microsoft{
+    vertical-align: text-top;
+    margin-left: 8px;
+    width: 80px;
+}
+
+.card-section-wrapper .orientation{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: -25px;
+    margin-bottom: var(--spacing-medium);
+}
+
+.orientation p{
+    display: flex;
+    align-items: center;
+    font-size: var(--fs-medium);
+    color: #666;
+}
+
+.orientation .material-icons{
+    font-size: var(--fs-medium);
+    margin-right: 5px;
+}
+
+.orientation .orientation-dis{
+    margin-right: 10px;
+}
+
+.card-section-wrapper .body-contect{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: var(--spacing-small);
+    margin-right: var(--spacing-small);
+}
+
+.card-section-wrapper a{
+    
+    border: 1px solid var(--button-color);
+    border-radius: 5px;
+    background-color: var(--button-color) ;
+    color: white;
+    text-align: center;
+    font-size: var(--fs-medium);
+    margin-bottom: var(--spacing-medium);
+    padding: var(--spacing-tiny);
+    width: 100px;
+}
+
+@media (max-width: 768px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .card .card-section{
+        width: 100%;
+        margin-bottom: var(--spacing-medium);
+        
+    }
+   
+}
+
+
+
+
+
+

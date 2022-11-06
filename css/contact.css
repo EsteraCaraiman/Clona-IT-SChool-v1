@@ -1,0 +1,151 @@
+/* Section welcome */
+.welcome {
+    height: 50vh ;
+    background-color: var(--bg-primary);
+    
+  }
+  
+.welcome h1 {
+    color: var(--text-white);
+    text-align: center;
+}
+.welcome .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px){
+    .welcome h1{
+        font-size: 2rem;
+    }
+   
+}
+
+/* Section contact */
+
+.contact-section .information h2 {
+   text-align: center;
+   margin-bottom: var(--spacing-large);
+
+}
+
+.contact-section .information p{
+    margin-bottom: var(--spacing-large);
+}
+
+.contact-layout{
+    display: flex;
+   
+   
+}
+
+.contact-layout  ul {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-medium); 
+   
+}
+
+.contact-layout li{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: var(--spacing-small);
+    margin-bottom: var(--spacing-large);
+    border-bottom: solid #ddd 1px;
+}
+
+.contact-layout .material-icons{
+    vertical-align: middle;
+    color: var(--text-primary);
+    padding-right: 5px;
+}
+
+.contact-layout .color  {
+    font-size: var(--fs-medium);
+    color: #8e8e8e;
+
+}
+
+.contact-layout a{
+    font-size: var(--fs-medium);
+    color: #8e8e8e; 
+}
+
+a:hover, a:active, a:focus {
+    color: black;
+}
+
+.contact-layout .form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;   
+    padding: var(--spacing-medium); 
+    font-size: 16px;
+    color: var(--text-dark)
+}
+
+label{
+  
+    padding-bottom: var(--spacing-tiny);
+    margin-top: -30px;
+    margin-bottom: -20px;
+   
+}
+
+input[type=text], textarea  {
+ 
+    padding: var(--spacing-small);
+    margin-bottom: var(--spacing-medium);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+   
+}
+
+.form textarea{
+    height: 100px;
+}
+
+input[type=email] {
+ 
+    padding: var(--spacing-small);
+    margin-bottom: var(--spacing-medium);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+   
+}
+
+input[type=submit] {
+    font-size: var(--fs-medium);
+    text-align: center;
+    color: white;
+    background-color: #2bb686;
+    border: 1px solid #2bb686;
+    border-radius: 5px;
+    padding: var(--spacing-small);
+    width: 100px;
+} 
+
+@media (max-width: 768px){
+
+    .contact-layout{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .contact-layout ul, .contact-layout form {
+        width: 100%; 
+        padding: 0; 
+    }
+
+    .contact-layout li{
+        margin-bottom: var(--spacing-medium);
+    }
+
+    .contact-layout li:last-of-type {
+        margin-bottom: var(--spacing-large);
+    }
+}
+
